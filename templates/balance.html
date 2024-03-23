@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="site-section bg-dark" id="contact-section" data-aos="fade">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-5">
+            <h1>Your Current Balance</h1>
+            <p>Current Balance: ${{ current_bal }}</p>
+              <a href="{% url  'customerlog'  %}" class="nav-link">Go back</a>
+          </div>
+
+        </div>
+      </div>
+
+</div>
+{% endblock %}
